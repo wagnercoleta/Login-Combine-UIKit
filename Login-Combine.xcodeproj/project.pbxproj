@@ -15,6 +15,7 @@
 		DD7770D728634D9F000ED6D5 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7770D628634D9F000ED6D5 /* LoginScreen.swift */; };
 		DD7770D928638D17000ED6D5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7770D828638D17000ED6D5 /* Constants.swift */; };
 		DD7770DB28639441000ED6D5 /* LoginValidCombine.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7770DA28639441000ED6D5 /* LoginValidCombine.swift */; };
+		DD7770DD2863A211000ED6D5 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DD7770DC2863A211000ED6D5 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		DD7770D628634D9F000ED6D5 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		DD7770D828638D17000ED6D5 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		DD7770DA28639441000ED6D5 /* LoginValidCombine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginValidCombine.swift; sourceTree = "<group>"; };
+		DD7770DC2863A211000ED6D5 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +46,7 @@
 		DD7770B428634B37000ED6D5 = {
 			isa = PBXGroup;
 			children = (
+				DD7770DC2863A211000ED6D5 /* README.md */,
 				DD7770BF28634B37000ED6D5 /* Login-Combine */,
 				DD7770BE28634B37000ED6D5 /* Products */,
 			);
@@ -130,6 +133,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD7770DD2863A211000ED6D5 /* README.md in Resources */,
 				DD7770CD28634B38000ED6D5 /* LaunchScreen.storyboard in Resources */,
 				DD7770CA28634B38000ED6D5 /* Assets.xcassets in Resources */,
 			);
