@@ -12,10 +12,10 @@ protocol LoginScreenProtocol: AnyObject {
 }
 
 class LoginScreen: UIView {
-
+    
     weak var delegate: LoginScreenProtocol?
     
-    lazy var viewContainer:UIView = {
+    private lazy var viewContainer:UIView = {
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
@@ -26,7 +26,7 @@ class LoginScreen: UIView {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "Login"
         label.font = UIFont.systemFont(ofSize: 70, weight: .bold)
-        label.textColor = .black
+        label.textColor = ColorConst.primary
         return label
     }()
     
@@ -38,7 +38,7 @@ class LoginScreen: UIView {
         tf.borderStyle = .roundedRect
         tf.keyboardType = .emailAddress
         tf.placeholder = "Digite seu e-mail:"
-        tf.textColor = .darkGray
+        tf.textColor = ColorConst.disabled
         return tf
     }()
     
@@ -49,8 +49,9 @@ class LoginScreen: UIView {
         tf.backgroundColor = .white
         tf.borderStyle = .roundedRect
         tf.keyboardType = .default
+        tf.isSecureTextEntry = true
         tf.placeholder = "Digite sua senha:"
-        tf.textColor = .darkGray
+        tf.textColor = ColorConst.disabled
         return tf
     }()
     
@@ -62,7 +63,7 @@ class LoginScreen: UIView {
         button.setTitleColor(.white, for: .normal)
         button.clipsToBounds = true
         button.layer.cornerRadius = 7.5
-        button.backgroundColor = .black
+        button.backgroundColor = ColorConst.primary
         button.addTarget(self, action: #selector(self.tappedLoginButton), for: .touchUpInside)
         return button
     }()
@@ -116,5 +117,10 @@ class LoginScreen: UIView {
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    public func setDelegateTextField(delegate: UITextFieldDelegate) {
+        self.emailTextFeild.delegate = delegate
+        self.passwordlTextFeild.delegate = delegate
     }
 }
